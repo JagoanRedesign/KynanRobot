@@ -75,33 +75,32 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {} !*
 ━━━━━━━━━━━━━━━━━━━━━━━━
-{} ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
+{} ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
 ➻ ᴜᴘᴛɪᴍᴇ ᐉ `{}`
 ➻ ᴜsᴇʀs ᐉ `{}`
 ➻ ɢʀᴏᴜᴘꜱ ᐉ `{}`
 ━━━━━━━━━━━━━━━━━━━━━━━━
-᳁ ᴛᴇᴋᴀɴ /help ᴀᴛᴀᴜ /mhelp ᴜɴᴛᴜᴋ ᴘᴇʀɪɴᴛᴀʜ ꜱᴀʏᴀ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
+᳁ ᴛᴇᴋᴀɴ /help ᴜɴᴛᴜᴋ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """
 
 buttons = [
+
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/{OWNER_USERNAME}"
-        ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/{SUPPORT_CHAT}"
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/Mazekubot"
+        ),  
+    ],
+    [
+      
+          InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="help_back"
+       ),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/DutabotSupport"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="kynan_support"
-       ),
         InlineKeyboardButton(
-            text="ᴅᴏɴᴀsɪ ❤️", callback_data="kynan_own"
-       ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴀᴋᴜ ᴅɪʜᴀᴛɪᴍᴜ ❤️", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+            text="❖ ᴛᴀᴍʙᴀʜᴋᴀɴ  ᴋᴇ  ɢʀᴜᴘ ❖", url="https://t.me/MzUserbot?startgroup=true"
         ),
      ],
 ]
@@ -485,14 +484,13 @@ def kynan_about_callback(update, context):
         )
     elif query.data == "kynan_own":
         query.message.edit_text(
-            text="👨‍💻 Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Saya."
+            text="Untuk yang ingin berdonasi sebagai ucapan terimakasih kepada Pembuat Saya."
             "\n\n Bisa melalui Qris atau Contact",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ϙʀɪs", url="{DONATE_LINK}"),
-                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ❤️", url="https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="ᴅᴏɴᴀsɪ ᴋᴇ  ᴏᴡɴᴇʀ️", url="https://t.me/Mazekubot"),
                  ],
                  [
                     InlineKeyboardButton(text="⩹", callback_data="kynan_back"),
