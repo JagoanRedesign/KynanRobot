@@ -9,7 +9,7 @@
          "manager",
          "Fallen"
       ],   
-   "repository": "https://github.com/Onlymeriz/KynanRobot",
+   "repository": "https://github.com/JagoanRedesign/KynanRobot",
    "stack": "heroku-22",
    "addons": [
       {
