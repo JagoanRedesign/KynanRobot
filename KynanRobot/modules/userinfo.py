@@ -319,9 +319,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ᴅᴏɴᴀsɪ ​❤️", url="https://graph.org/file/2982a27fe0e1500bf5b17.jpg"),
+                                "ᴅᴏɴᴀsɪ ​", url="https://trakteer.id/DutabotID/tip"),
                             InlineKeyboardButton(
-                                "ᴏᴡɴᴇʀ", url="https://t.me/Riizzvbss"),
+                                "ᴏᴡɴᴇʀ", url="https://t.me/Mazekubot"),
                         ],
                     ]
                 ),
@@ -406,7 +406,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "🤖 <b>Stats For <a href='https://t.me/KynanUserbot'>˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗ </a>:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "🤖 <b>Stats For Bot\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     update.effective_message.reply_text(
         result,
