@@ -42,7 +42,7 @@ def mediainfo(media):
     return m
 
 
-@register(pattern="^/logo ?(.*)")
+@register(pattern="^slogo ?(.*)")
 async def logo_gen(event):
     xx = await event.reply("`Mempersiapkan logo Anda...`")
     name = event.pattern_match.group(1)
@@ -113,7 +113,7 @@ async def logo_gen(event):
         await telethn.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗](https://t.me/KynanUserbot)",
+            caption="Logo by [ᴍᴢ ꭙ ꝛᴏʙᴏᴛ](https://t.me/MzUserbot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -196,7 +196,7 @@ async def logo_(event):
         await telethn.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [˹ҡʏɴλɴ ꭙ ꝛᴏʙᴏᴛ˼༗](https://t.me/KynanUserbot)",
+            caption="Logo by [ᴍᴢ ꭙ ꝛᴏʙᴏᴛ](https://t.me/MzUserbot)",
             force_document=False,
         )
         os.remove(flnme)
